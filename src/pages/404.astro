@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import lostImage from "../assets/404-vaporwave-glitch.png";
+import Window from "../components/Window.astro";
+---
+<Layout>
+    <main>
+        <img class="lost-image" src={lostImage.src} alt="A dolphin telling the user they are lost" width="400" height="300">
+        <Window headerTitle="404 Not Found!" headerColor="purple">
+            <p>It's natural to feel lost sometimes. In this case though, it seems like you are.</p>
+            <p><a href="/">Follow me</a> and I'll take you home.</p>
+        </Window>
+    </main>
+</Layout>
+
+<style>
+    :root {
+        --vaporwave-pink: #ff71ce;
+        --vaporwave-blue: #01cdfe;
+        --vaporwave-green: #05ffa1;
+        --vaporwave-purple: #b967ff;
+        --vaporwave-yellow: #fffb96;
+        --game-gray: #EDEDED;
+    }
+    main {
+        display: grid;
+        justify-items: center;
+        row-gap: 48px;
+    }
+    .lost-image {
+        filter: drop-shadow(5px 10px 10px var(--vaporwave-purple));
+    }
+</style>

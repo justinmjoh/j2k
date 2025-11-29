@@ -1,0 +1,51 @@
+---
+import devo from "../assets/devo.png";
+import Window from "./Window.astro";
+---
+<main>
+    
+    <Window headerTitle="WHOIS Justin?">
+        <div class="about-image-container">
+            <img class="about-image" src={devo.src} alt="Justin in DEVO costume">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet sem vel finibus hendrerit. Nunc ut scelerisque erat. Nullam lacus ex, auctor et nibh sit amet, sagittis pharetra metus. Vivamus metus metus, placerat vel justo eu, vestibulum interdum diam. Phasellus sit amet tempus leo. Nunc pellentesque lectus tempor magna vulputate, sit amet scelerisque nunc euismod. Praesent gravida diam enim, sed elementum tortor laoreet eu. Integer congue velit diam. Phasellus et dui ut lorem pellentesque accumsan. Phasellus vestibulum iaculis tincidunt. Vestibulum scelerisque mauris eget leo dignissim, id hendrerit sem tempus. Quisque tristique lorem vitae tellus accumsan pharetra.</p>
+        <p>Pellentesque hendrerit libero eget maximus aliquet. Donec eget fermentum est. Praesent semper leo quis risus commodo pellentesque. Integer ipsum metus, dictum ut turpis sit amet, ultricies mollis lectus. Maecenas iaculis dui nec enim posuere sagittis. Donec rutrum purus imperdiet felis congue laoreet. Aliquam non dui non sem luctus vehicula eget vel ex. Duis maximus, quam non lacinia vulputate, odio arcu vestibulum purus, sit amet viverra libero quam non odio. Etiam in efficitur mi, ut tempor nunc. Donec ultricies sit amet nulla at semper. Praesent quis lorem luctus, scelerisque tortor non, aliquam enim. Proin pulvinar luctus fermentum.</p>
+        <p>Sed in dolor gravida, consectetur neque et, porttitor dolor. Aenean ultrices, dolor sit amet sodales molestie, augue dolor pharetra mi, vitae porttitor enim sapien et mi. Sed fringilla, ligula vitae pretium tempus, lorem nunc luctus odio, at viverra orci sem at neque. Proin justo urna, posuere vitae sapien vel, cursus consectetur tellus. Phasellus nec pretium nisi. Cras dignissim odio tellus, eget tincidunt leo gravida vitae. Nulla est arcu, hendrerit ac scelerisque at, lacinia ac tortor.</p>
+    </Window>
+</main>
+
+<style>
+    :root {
+        --vaporwave-pink: #ff71ce;
+        --vaporwave-blue: #01cdfe;
+        --vaporwave-green: #05ffa1;
+        --vaporwave-purple: #b967ff;
+        --vaporwave-yellow: #fffb96;
+        --game-gray: #EDEDED;
+    }
+    main {
+        display: grid;
+        justify-items: center;
+        row-gap: 48px;
+    }
+    .about-image-container {
+        display: flex;
+        justify-content: center;
+    }
+    .about-image {
+        width:100%;
+        border: solid 4px #000000;
+        max-width: 300px;
+        max-height: 400px;
+        box-shadow: 5px 10px var(--vaporwave-purple);
+    }
+    /* Medium Screens */
+    @media (min-width: 769px) {
+        .window-header h2 {
+            font-size: 16px;
+        }
+        .window-body p{
+            font-size: 16px;
+        }
+    }
+</style>
