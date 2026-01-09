@@ -1,17 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import lostImage from "../assets/404-vaporwave-glitch.png";
+import constructionImage from "../assets/under-construction.png";
 import Window from "../components/Window.astro";
 ---
-<Layout>
+<main>
+
+</main>
+
+
+
     <main>
-        <img class="lost-image" src={lostImage.src} alt="A dolphin telling the user they are lost" width="400" height="300">
-        <Window headerTitle="404 Not Found!" headerColor="purple">
-            <p>It's natural to feel lost sometimes. In this case though, it seems like you are.</p>
-            <p><a href="/">Follow me</a> and I'll take you home.</p>
-        </Window>
+        <img class="lost-image" src={constructionImage.src} alt="A dolphin telling the user they are lost" width="241" height="300">
+    <Window headerTitle="Under Construction!">
+        <p>Patience is a virtue, but my projects can also be found on my <a href="https://www.linkedin.com/in/justinmjoh/">LinkedIn</a> and <a href="https://github.com/justinmjoh">GitHub</a> while you're waiting.</p> 
+    </Window>
     </main>
-</Layout>
+
 
 <style>
     :root {
