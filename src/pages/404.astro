@@ -2,8 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import lostImage from "../assets/404-vaporwave-glitch.png";
 import Window from "../components/Window.astro";
+const pageTitle = "404 | Justin Johnson"
 ---
-<Layout>
+<Layout title={ pageTitle }>
     <main>
         <img class="lost-image" src={lostImage.src} alt="A dolphin telling the user they are lost" width="400" height="300">
         <Window headerTitle="404 Not Found!" headerColor="purple">
