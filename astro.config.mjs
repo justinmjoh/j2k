@@ -7,5 +7,5 @@ import icon from 'astro-icon';
 export default defineConfig({
   integrations: [icon()],
   site: 'https://justinmjoh.github.io',
-  base: '/j2k'
+  base: '/'
 });
