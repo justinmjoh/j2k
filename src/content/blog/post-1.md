@@ -23,7 +23,7 @@ It's the next day, and you are taking a lunch break with your coworkers on the j
 
 "It certainly beats my wife's so called cooking" he exclaims. Others laugh.
 
-"I tell you, there's gonna be a point in no more than 10 years where every home in America has one these. We will never have to cook again. Think of all the time we will save. Heck, if I was a chef right about now, I'd be looking for a new job." He adds.
+"I tell you, there's gonna be a point in no more than 10 years where every home in America has one of these. We will never have to cook again. Think of all the time we will save. Heck, if I was a chef right about now, I'd be looking for a new job." He adds.
 
 Lunch hour finishes and you go back to work.
 
