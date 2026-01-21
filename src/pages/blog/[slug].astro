@@ -1,0 +1,24 @@
+---
+import Window from '../../components/Window.astro';
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post }
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+<Layout title={`${post.data.title} | Justin Johnson`}>
+  <main>
+    <Window headerTitle={post.data.title}>
+        <p><b>Published: {post.data.publishDate}</b></p>
+        <Content />
+    </Window>
+  </main>
+</Layout>

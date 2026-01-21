@@ -1,0 +1,21 @@
+---
+import Window from '../components/Window.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection("blog")
+---
+<main>
+     {posts.map(post => <Window headerTitle={post.data.title}>
+            <p>
+                <b>
+                    Published: {post.data.publishDate}
+                </b>
+            </p>
+            <p>
+                {post.data.description}
+            </p>
+            <p>
+                <a href={`/blog/${post.slug}`}>Read more...</a>
+            </p>
+        </Window>)}
+</main>
